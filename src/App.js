@@ -1,15 +1,45 @@
 import logo from './logo.svg';
 import './App.css';
-import TestComp1 from './components/FunctionalComponents/textCopmponent';
-import ReiteratorComp from './components/ClassComponents/testClassComponents';
-import Login from './components/ClassComponents/LoginComponent';
+// import PropsComponent from './components/FunctionalComponents/propsComponent';
+// import StateComponent from './components/ClassComponents/stateComponent';
+//import Virat from './components/ClassComponents/stateComponent';
+import Navbar from './components/FunctionalComponents/NavBar';
+import { BrowserRouter,Routes,Route} from 'react-router-dom';
+import Home from './components/FunctionalComponents/home';
+import About from './components/FunctionalComponents/about';
+import Exp from './components/FunctionalComponents/Exp';
+import Login from './components/FunctionalComponents/Login';
+import Register from './components/FunctionalComponents/Register';
+//import Register from './components/FunctionalComponents/Register';
+
+import Footer from './components/FunctionalComponents/footer';
+
+
+ 
 function App() {
   return (
+
     <div className="App">
-      {/* <ReiteratorComp/> */}
-      <header className="App-header">
-        <Login/>
-        <img src={logo} className="App-logo" alt="logo" />
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path="/register" element={<Register/>}></Route>
+        <Route path="/home" element={<Home/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
+        <Route path="/experience" element={<Exp/>}></Route>
+        <Route path="/login" element={<Login/>}></Route>
+      </Routes>
+      {/* <Register/> */}
+
+      </BrowserRouter>
+      <Footer/>
+      {/* <header className="App-header"> */}
+        {/* <PropsComponent name="Haris" course="REACT"/> */}
+        {/* <StateComponent/> */}
+        {/* <Virat/>
+           */}
+
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -22,7 +52,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      
     </div>
   );
 }

@@ -1,0 +1,104 @@
+
+ol{
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+    background-color: black;
+    color: white;
+    margin: 0%;
+    height: 50px;
+    padding: 5px;
+    font-size: large;
+  
+}
+
+Footer{
+    background-color:black;
+    padding: 0px;
+    margin-top: 37%;
+    border-radius: 3px;
+    justify-content: space-around;
+}
+.whatslogo{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    
+}
+h1{
+    color: black;
+    
+}
+h3{
+    color:black
+}
+.github{
+    width:30px;
+    height: 30px;
+    
+    padding: 10px;
+
+}
+.twitterlogo{
+    width:30px;
+    height: 30px;
+    padding: 10px;
+    
+
+}
+.linkedin{
+    width:30px;
+    height: 30px;
+    padding: 10px;
+}
+
+h4{
+    color: white;
+    padding-top: 2%;
+    margin: 0%;
+    height: 50px;
+    padding: 10px;
+    
+}
+.home{
+    margin-top: 20%;
+}
+.login{
+    margin-top: 20%;
+}
+.about{
+    margin-top: 20%;
+}
+.exp{
+    margin-top: 20%;
+}
+
+.container{
+    padding: 16px;
+    margin: auto;
+    width: 40%;
+    border: 3px solid green;
+    border-radius: 5px;
+    padding: 1px;
+    
+}
+input{
+    padding: 10px;
+}
+button{
+    background-color:#04AA6D;
+    color:white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor : pointer;
+    width: 25%;
+
+
+}
+button:hover{
+    opacity: 0.8;
+}
+
+
+
